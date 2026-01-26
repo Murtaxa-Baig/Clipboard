@@ -15,7 +15,7 @@ export default function Download() {
                     </div>
                     <div className="brand-gradient p-10 rounded-2xl text-white flex flex-col items-center justify-center gap-6 shadow-xl transform transition-transform hover:scale-[1.02] cursor-pointer">
                         <span className="material-symbols-outlined text-6xl">
-                            play_store_installed
+                            Play Store
                         </span>
                         <div className="text-center">
                             <p className="text-sm opacity-90 mb-1">Get it on</p>

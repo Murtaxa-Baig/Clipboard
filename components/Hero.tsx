@@ -4,11 +4,7 @@ export default function Hero() {
             <div className="flex flex-col lg:flex-row items-center gap-12">
                 <div className="flex-1 text-center lg:text-left">
                     <h1 className="text-4xl md:text-6xl font-black text-[#131118] dark:text-white leading-[1.1] mb-6 tracking-tight">
-                        Generate{" "}
-                        <span className="text-transparent bg-clip-text brand-gradient">
-                            Human-Like
-                        </span>{" "}
-                        AI Content in Seconds
+                        Generate Human-Like AI Content in Seconds
                     </h1>
                     <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto lg:mx-0">
                         Empower your writing with our suite of advanced AI tools designed
