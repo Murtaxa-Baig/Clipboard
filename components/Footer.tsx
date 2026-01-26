@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Footer() {
     return (
@@ -7,9 +8,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-gray-800 pb-12">
                     <div>
                         <div className="flex items-center gap-2 mb-4">
-                            <span className="material-symbols-outlined text-brand-pink text-3xl">
-                                auto_fix_high
-                            </span>
+                            <Logo size={36} />
                             <span className="text-xl font-bold">Ai Utilities</span>
                         </div>
                         <p className="text-gray-400 text-sm max-w-xs">

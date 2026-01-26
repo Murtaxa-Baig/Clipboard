@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "./Logo";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +14,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-primary text-3xl">
-                            auto_fix_high
-                        </span>
+                        <Logo size={36} />
                         <Link
                             href="/"
                             className="text-[#131118] dark:text-white text-xl font-bold tracking-tight"
