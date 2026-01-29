@@ -11,7 +11,7 @@ export default function TermsContent() {
                 transition={{ duration: 0.8 }}
                 className="mb-12 border-b border-gray-100 dark:border-gray-800 pb-8 text-center md:text-left"
             >
-                <h1 className="text-4xl md:text-5xl font-black text-[#131118] dark:text-white mb-4">
+                <h1 className="text-4xl md:text-5xl mt-8 font-black text-[#131118] dark:text-white mb-4">
                     Terms & Conditions
                 </h1>
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm">

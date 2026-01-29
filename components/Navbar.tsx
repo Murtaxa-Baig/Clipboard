@@ -19,17 +19,17 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur border-b border-gray-200 dark:border-gray-800 transition-shadow duration-300 ${
+        <nav className={`sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur border-b border-gray-200 dark:border-gray-800 transition-shadow duration-300 ${
             scrolled ? "shadow-lg" : ""
         }`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 min-w-0">
                         <Logo size={36} />
                         <Link
                             href="/"
-                            className="text-[#131118] dark:text-white text-xl font-bold tracking-tight"
+                            className="text-[#131118] dark:text-white text-xl font-bold tracking-tight truncate"
                         >
                             Ai Utilities
                         </Link>
@@ -107,15 +107,18 @@ function NavLinks({ mobile = false, onClick }: NavLinksProps) {
             </Link>
 
             <Link
-                href="/delete-account"
-                onClick={onClick}
+                href="/#download"
+                onClick={(e) => {
+                    if (pathname === "/") {
+                        e.preventDefault();
+                        document.getElementById("download")?.scrollIntoView({ behavior: "smooth" });
+                    }
+                    onClick?.();
+                }}
                 className={`${mobile ? "mt-2" : ""
-                    } text-sm font-bold px-4 py-2 rounded-lg transition-colors ${isActive("/delete-account")
-                        ? "bg-red-100 text-red-600"
-                        : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-red-50 hover:text-red-600"
-                    }`}
+                    } text-sm font-bold px-6 py-2 rounded-lg transition-colors bg-primary text-white hover:bg-primary/90 shadow-md hover:shadow-lg`}
             >
-                Delete Account
+                Download
             </Link>
         </>
     );

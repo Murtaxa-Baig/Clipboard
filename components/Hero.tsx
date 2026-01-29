@@ -59,7 +59,7 @@ export default function Hero() {
                                     "url('https://lh3.googleusercontent.com/aida-public/AB6AXuB86QxfJFKhCim1Kh_WeVLZ7FWPJA1abHoH9RE3Mv8b0u-lEXf01c8xQ_lA7Nk6wR7F31i0QbGAiVTRu_UIOGrdk3vpzHWdPOdLrYUgypnvE4BABKSJhgrHmdGi-l_8Np91pDxOhOogy6nb4ktJPpBSN42F9Qj8-4tIg1f30uyfgNHJHtYrnGgKF64zDJsUz_5DKqDZ5gJC3fAlHgellbfNrg_HfTk940FR8dZZm2teAWTMPgwP740EbFFMd1B1WsLra63ZvnOptsTW')",
                             }}
                         ></motion.div>
-                        <motion.div
+                       {/* <motion.div
                             initial={{ x: -20, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ delay: 1, duration: 0.5 }}
@@ -78,7 +78,7 @@ export default function Hero() {
                                     99.9% Human-Like
                                 </p>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
                     </div>
                 </motion.div>
             </div>
