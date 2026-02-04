@@ -116,7 +116,7 @@ function NavLinks({ mobile = false, onClick }: NavLinksProps) {
                     onClick?.();
                 }}
                 className={`${mobile ? "mt-2" : ""
-                    } text-sm font-bold px-6 py-2 rounded-lg transition-colors bg-primary text-white hover:bg-primary/90 shadow-md hover:shadow-lg`}
+                    } text-sm font-bold px-6 py-2 rounded-lg transition-all brand-gradient text-white hover:opacity-90 shadow-md hover:shadow-lg`}
             >
                 Download
             </Link>

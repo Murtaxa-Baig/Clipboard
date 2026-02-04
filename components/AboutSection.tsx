@@ -14,7 +14,15 @@ export default function AboutSection() {
                         transition={{ duration: 0.8 }}
                         className="flex-1 w-full"
                     >
-                        <div
+                        <motion.div
+                            animate={{
+                                y: [0, -10, 0],
+                            }}
+                            transition={{
+                                duration: 4,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }}
                             className="w-full aspect-square md:aspect-auto md:h-[400px] bg-gray-100 dark:bg-gray-800 rounded-2xl relative overflow-hidden shadow-xl bg-cover bg-center"
                             style={{
                                 backgroundImage:
@@ -22,7 +30,7 @@ export default function AboutSection() {
                             }}
                         >
                             <div className="absolute inset-0 bg-primary/10"></div>
-                        </div>
+                        </motion.div>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}

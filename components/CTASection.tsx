@@ -1,8 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function CTASection() {
+    const pathname = usePathname();
+
     return (
         <section className="py-24 bg-white dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,20 +47,21 @@ export default function CTASection() {
                             transition={{ delay: 0.4 }}
                             className="flex flex-col sm:flex-row justify-center gap-4"
                         >
-                          {/*  <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="bg-white text-primary font-bold py-4 px-12 rounded-xl text-lg hover:bg-gray-100 transition-all shadow-xl"
-                            >
-                                Get Started Free
-                            </motion.button> */}
-                            <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="bg-transparent border-2 border-white/40 hover:border-white text-white font-bold py-4 px-12 rounded-xl text-lg transition-all"
-                            >
-                                View All Tools
-                            </motion.button>
+                            <Link href="/#features" className="w-full sm:w-auto">
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    onClick={(e) => {
+                                        if (pathname === "/") {
+                                            e.preventDefault();
+                                            document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
+                                        }
+                                    }}
+                                    className="w-full sm:w-auto bg-transparent border-2 border-white/40 hover:border-white text-white font-bold py-4 px-12 rounded-xl text-lg transition-all"
+                                >
+                                    View All Tools
+                                </motion.button>
+                            </Link>
                         </motion.div>
                     </div>
                 </motion.div>

@@ -62,7 +62,7 @@ const itemVariants = {
 
 export default function Features() {
     return (
-        <section className="bg-white dark:bg-gray-900 py-20 border-y border-gray-100 dark:border-gray-800">
+        <section id="features" className="bg-white dark:bg-gray-900 py-20 border-y border-gray-100 dark:border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -89,15 +89,15 @@ export default function Features() {
                             key={index}
                             variants={itemVariants}
                             whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
-                            className="feature-card border border-gray-100 dark:border-gray-800 bg-background-light dark:bg-background-dark p-6 rounded-xl transition-shadow"
+                            className="feature-card border border-gray-100 dark:border-gray-800 bg-gradient-to-br from-primary/5 to-brand-pink/5 dark:from-primary/10 dark:to-brand-pink/10 p-6 rounded-xl transition-all duration-300 hover:brand-gradient group"
                         >
-                            <span className="material-symbols-outlined text-primary text-3xl mb-4">
+                            <span className="material-symbols-outlined text-primary group-hover:text-white text-3xl mb-4 transition-colors">
                                 {feature.icon}
                             </span>
-                            <h3 className="text-lg font-bold text-[#131118] dark:text-white mb-2">
+                            <h3 className="text-lg font-bold text-[#131118] dark:text-white group-hover:text-white mb-2 transition-colors">
                                 {feature.title}
                             </h3>
-                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                            <p className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-white/90 transition-colors">
                                 {feature.description}
                             </p>
                         </motion.div>
