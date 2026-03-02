@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <Download />
       <AboutSection />
-      {/* <ContactForm /> */}
+
       <Footer />
     </main>
   );
