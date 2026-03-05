@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ai Utilities",
+  title: "AI Writer",
   description: "Generate Human-Like AI Content in Seconds",
 };
 

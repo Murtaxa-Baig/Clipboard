@@ -9,7 +9,7 @@ export default function Footer() {
                     <div>
                         <div className="flex items-center gap-2 mb-4">
                             <Logo size={36} />
-                            <span className="text-xl font-bold">Ai Utilities</span>
+                            <span className="text-xl font-bold">AI Writer</span>
                         </div>
                         <p className="text-gray-400 text-sm max-w-xs">
                             Revolutionizing the way you write with high-performance AI tools
@@ -83,7 +83,7 @@ export default function Footer() {
                     <p className="text-gray-500 text-sm ">
                         Copyright © 2024 <a href="http://www.appnayatech.com/" target="_blank" rel="noopener noreferrer">AppNaya Technologies</a>. All rights reserved.
                     </p>
-                   {/* <div className="flex gap-6">
+                    {/* <div className="flex gap-6">
                         <Link
                             href="#"
                             className="text-gray-500 hover:text-white transition-colors"
