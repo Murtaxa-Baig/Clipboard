@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0C5CFB;
-  --color-brand-pink: #FF0AB5;
-  --color-brand-blue: #0C5CFB;
+  --color-primary: #FF6200;
+  --color-brand-pink: #FF8F3D;
+  --color-brand-blue: #FF6200;
   --color-background-light: #f6f5f8;
   --color-background-dark: #141022;
 
@@ -12,7 +12,7 @@
 
 @layer utilities {
   .brand-gradient {
-    background: linear-gradient(180deg, #0C87FB 0%, #0045CE 100%);
+    background: linear-gradient(180deg, #FF8233 0%, #FF6200 50%, #D64F00 100%);
   }
   .identity-gradient {
     background: linear-gradient(180deg, #19DD91 0%, #008853 100%);
@@ -42,12 +42,12 @@
 
   .timeline-line {
     width: 2px;
-    background: linear-gradient(180deg, #0C87FB 0%, #0045CE 100%);
+    background: linear-gradient(180deg, #FF8233 0%, #FF6200 50%, #D64F00 100%);
   }
 
   .hero-mesh {
-    background-image: radial-gradient(at 0% 0%, rgba(12, 135, 251, 0.1) 0, transparent 50%),
-      radial-gradient(at 100% 100%, rgba(0, 69, 206, 0.1) 0, transparent 50%);
+    background-image: radial-gradient(at 0% 0%, rgba(255, 98, 0, 0.12) 0, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(214, 79, 0, 0.08) 0, transparent 50%);
   }
 }
 

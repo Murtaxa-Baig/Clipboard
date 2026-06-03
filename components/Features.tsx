@@ -13,14 +13,14 @@ export default function Features() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl font-bold text-[#131118] dark:text-white mb-4">
-                        Powerful Security Features
+                        Limitless Clipboard Features
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400">
-                        Everything you need to manage your passwords and identities securely.
+                        Everything you need to copy, paste, sync, and organize your clippings effortlessly.
                     </p>
                 </motion.div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    {/* Password Card */}
+                    {/* Clipboard Card */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -30,21 +30,21 @@ export default function Features() {
                     >
                         <div className="bg-white/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6 backdrop-blur-sm">
                             <span className="material-symbols-outlined text-4xl text-white">
-                                password
+                                content_paste
                             </span>
                         </div>
-                        <h3 className="text-2xl font-bold mb-4">Save Password</h3>
+                        <h3 className="text-2xl font-bold mb-4">Instant Clipping History</h3>
                         <p className="opacity-90 mb-6 flex-1">
-                            Store your passwords with top-tier security. Keep track of all essential details in one place and generate strong, secure passwords instantly with weak, medium, or strong strength options.
+                            Save everything you copy automatically—text, code snippets, web links, URLs, and color codes. Keep track of all essential details in one place and search or copy them back with a single click.
                         </p>
                         <ul className="space-y-3 opacity-90">
-                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Item Name & Username</li>
-                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Website URL & Category</li>
-                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Secure Notes</li>
+                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Formatted Text & Code Snippets</li>
+                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Web URLs & Rich Metadata</li>
+                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Export & Download as Text File</li>
                         </ul>
                     </motion.div>
 
-                    {/* Identity Card */}
+                    {/* Media Card */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -55,18 +55,17 @@ export default function Features() {
                     >
                         <div className="bg-white/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6 backdrop-blur-sm">
                             <span className="material-symbols-outlined text-4xl text-white">
-                                badge
+                                image
                             </span>
                         </div>
-                        <h3 className="text-2xl font-bold mb-4">Save Identity</h3>
+                        <h3 className="text-2xl font-bold mb-4">Advanced Media & Files</h3>
                         <p className="opacity-90 mb-6 flex-1">
-                            Keep your personal information safe and easily accessible for quick form filling and secure record-keeping. Organized and always encrypted.
+                            Never lose copied images, screenshots, files, and rich attachments. Preview media assets in high fidelity directly from the history list, and reuse them whenever you need.
                         </p>
                         <ul className="space-y-3 opacity-90">
-                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Identity Title & Full Name</li>
-                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Email & Phone Number</li>
-                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Address Details</li>
-                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Secure Notes</li>
+                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> Screenshots & Image Assets</li>
+                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> File Attachments & Archives</li>
+                            <li className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">check_circle</span> PDF Documents & Assets</li>
                         </ul>
                     </motion.div>
                 </div>

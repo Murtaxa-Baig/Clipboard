@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Download from "@/components/Download";
 import AboutSection from "@/components/AboutSection";
-import ContactForm from "@/components/ContactForm";
+import ClipboardDemo from "@/components/ClipboardDemo";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,6 +14,7 @@ export default function Home() {
       <div id="features">
         <Features />
       </div>
+      <ClipboardDemo />
       <Download />
       <AboutSection />
 

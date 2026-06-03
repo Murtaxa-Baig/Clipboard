@@ -161,7 +161,7 @@ export default function DeleteAccount() {
                             </p>
                             <p className="text-[#6b608a] dark:text-gray-400 text-base font-normal leading-relaxed">
                                 By deleting your account, you will lose access to all your
-                                project data, historical reports, and active subscriptions
+                                clipboard history, saved snippets, custom boards, and active subscriptions
                                 immediately.
                             </p>
                         </div>

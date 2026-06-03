@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Password Manager",
-  description: "Secure Password and Identity Manager",
+  title: "Paste: Limitless Clipboard - Smart Clipboard Manager",
+  description: "Securely save, organize, search, and sync your clipboard history—including text messages, URLs, images, and files—across your iOS and Android devices.",
 };
 
 export default function RootLayout({

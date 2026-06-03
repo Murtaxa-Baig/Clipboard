@@ -26,15 +26,15 @@ export async function POST(request: Request) {
         let data;
         try {
             data = await response.json();
-        } catch (e) {
+        } catch {
             data = { error: "Failed to parse response from server" };
         }
 
         return NextResponse.json(data, { status: response.status });
-    } catch (error: any) {
+    } catch (error) {
         console.error("DELETE_ACCOUNT_PROXY_ERROR:", error);
         return NextResponse.json(
-            { error: error?.message || "Internal server error" },
+            { error: error instanceof Error ? error.message : "Internal server error" },
             { status: 500 }
         );
     }

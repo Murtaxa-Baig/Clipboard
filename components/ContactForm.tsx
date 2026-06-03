@@ -66,10 +66,10 @@ export default function ContactForm() {
                 subject: "",
                 message: "",
             });
-        } catch (error: any) {
+        } catch (error) {
             setSubmitStatus({
                 type: "error",
-                message: error.message || "An error occurred. Please try again later.",
+                message: error instanceof Error ? error.message : "An error occurred. Please try again later.",
             });
         } finally {
             setIsSubmitting(false);
