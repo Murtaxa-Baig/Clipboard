@@ -25,10 +25,10 @@ export default function PrivacyContent() {
           <span className="hidden sm:inline text-gray-300">|</span>
           <a
             className="text-primary font-medium hover:underline flex items-center gap-1"
-            href="mailto:Appnayatecnologoes@gmail.com"
+            href="mailto:supportappnaya@gmail.com"
           >
             <span className="material-symbols-outlined text-sm">mail</span>
-            Appnayatecnologoes@gmail.com
+            supportappnaya@gmail.com
           </a>
         </div>
       </motion.header>
@@ -406,11 +406,11 @@ export default function PrivacyContent() {
                   If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us:
                 </p>
                 <a
-                  href="mailto:Appnayatecnologoes@gmail.com"
+                  href="mailto:supportappnaya@gmail.com"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:opacity-90 transition-opacity"
                 >
                   <span className="material-symbols-outlined">mail</span>
-                  Appnayatecnologoes@gmail.com
+                  supportappnaya@gmail.com
                 </a>
               </div>
             ),
